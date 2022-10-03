@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Resume">
+        <meta name="description" content="Это сайт - резюме">
+        <title>My resume</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card header">
+                <h1>Портфолио Frontend-разработчика</h1>
+            </div>
+            <div class="card nav" >
+                    <!-- ul>(li>a{Item $})*5 -->
+                    <ul>
+                        <li><a href="#aboutmy">О себе</a></li>
+                        <li><a href="#hobby">Хобби</a></li>
+                        <li><a href="#work">Опыт</a></li>
+                        <li><a href="#footer">Контакты</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Разное</a></li>
+                    </ul>
+            </div>
+            <div class="card aboutmy" id="aboutmy">
+                <img src="imgs/My_photo.jpg" alt="фото" class="avatar">
+                <div class="info-text">
+                    <h2>О себе</h2>
+                    <p>Меня зовут Игорь, я хочу освоить новую для себя профессию Frontend-разработчика, поэтому записался на курсы в Result.School. На курсе будем изучать JavaScript, фреймворки и другие самые популярные технологии.</p>
+                    <p>Меня очень привлекает работа в IT-сфере, на мой взгляд эта сфера интересная, востребованная, перспективная, а также престижная с высоким, стабильным доходом и огромным спектром направлений.</p>                    
+                    <h4>Список социальных сетей:</h4>
+                    <a href="1" class="" target="_blank">OK</a>    <!-- https://ok.ru/profile/199719123769 -->                
+                    <a href="https://vk.com/id58802035" class="" target="_blank">VK</a>                    
+                </div>
+            </div>
+            <div class="card hobby" id="hobby">
+                <h2>Мои хобби</h2>
+                <ul class="">
+                    <li>Путешествие</li>
+                    <li>Танцы</li>
+                    <li>Музыка</li>
+                </ul>                
+            </div>
+            <div class="card work" id="work">
+                <h2>Опыт работы</h2>
+                <table>
+                    <colgroup>
+                        <col width="40%">
+                        <col width="30%">
+                        <col width="30%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Организация</th>
+                            <th>Должность</th>
+                            <th>Период работы</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>"Канал имени Москвы"</td>
+                            <td>Специалист</td>
+                            <td>2008-2011</td>
+                        </tr>
+                        <tr>
+                            <td>ГазПромНефть</td>
+                            <td>Руководитель</td>
+                            <td>2011-2022</td>
+                        </tr>
+                        <tr>
+                            <td>Result.School (Курсы)</td>
+                            <td>Учащийся</td>
+                            <td>2022-по н.в.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card contacts" id="footer">
+                <div class="contact1">
+                    <h2>Связаться со мной</h2>
+                    <form class="form">
+                        <div class="form-row">
+                            <div class="form-group">                 
+                                <label for="name">Ваше имя:</label>
+                                <input type="text" id="name" placeholder="Введите имя">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Ваш email:</label>
+                                <input type="email" id="email" placeholder="Введите email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Ваше сообщение:</label>                        
+                            <textarea id="message" cols="10" rows="4"placeholder="Введите сообщение..."></textarea>
+                            <button class="btn" type="submit">Отправить!</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact2">
+                    <h2>Мои контакты</h2>
+                    <table>
+                        <colgroup>                            
+                            <col width="50%">
+                            <col width="50%">
+                        </colgroup>
+                        <tr>
+                            <td>Tel./Fax: </td>
+                            <td>8.495.351.25.34</td>
+                        </tr>
+                        <tr>
+                            <td>Mob.tel.:</td>
+                            <td>8.980.351.25.34</td>
+                        </tr>
+                        <tr>
+                            <td>Telegram/WhatsApp:</td>
+                            <td>8.980.351.25.34</td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td>fantop@mail.ru</td>
+                        </tr>
+                        <tr>
+                            <td>Skype:</td>
+                            <td>fantop</td>
+                        </tr>
+                        <tr>
+                            <td>Instagram:</td>
+                            <td>@fantop</td>
+                        </tr>
+                        <tr>
+                            <td>Zoom:</td>
+                            <td>fantop@</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

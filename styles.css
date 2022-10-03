@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); /* Шрифт из вне */
+* {   /* Для всех элементов */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background: url(imgs/cat.jpg);  /* Фоновый рисунок*/    
+    background-attachment: fixed;  /* Фон зафиксирован */
+    background-repeat: no-repeat;  /* Изображение не повторяется */
+    background-size: cover;  /* Масштаб фонового рисунка */
+    background-position: center center; /* Выровнено по центру */
+    background-color: #666;   /* Цвет фона без рисунка  */
+
+    color: white;  /* Цвет текста */    
+    font-family: 'Roboto', sans-serif;  /* Шрифт */
+    font-size: 18px;  /* Размер шрифта */
+    /*font-weight: normal;  /* bold - жирный текст */
+    /* или     font: normal 18px 'Roboto', sans-serif; */
+    
+    line-height: 1.55em;  /* размер строчки */
+    font-style: italic;  /* Наклонный текст */
+    letter-spacing: 1px;  /* Между символами */
+    word-spacing: 5px;   /* Между словами и тегами */
+}
+.container {    
+    background: rgba(0, 0, 0, 0.7);
+    margin: 10px auto;
+    max-width: 1000px;
+    box-shadow: 13px 7px 7px rgba(0, 0, 0, 0.5);   /* Тень */
+}
+@media (max-width: 1017px) {
+    .container {
+        margin: 0px auto;
+    }
+}
+@media (max-width: 870px) {
+    .nav {
+        font-size: 16px;
+        word-spacing: 1px;
+        line-height: 1.2em;      
+    }
+    .header h1 {
+        letter-spacing: 1px;
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 515px) {
+    .nav {
+        font-size: 13px;
+        word-spacing: 0;
+    }
+    .header h1 {
+        letter-spacing: 2px;
+        font-size: 1.1rem;
+        word-spacing: 0;
+    }    
+}
+@media (max-width: 420px) {
+    .nav {
+        font-size: 11px;              
+    }
+    .header h1 {        
+        font-size: 1.0rem;        
+    }
+}
+.card {
+    margin: 6px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+@media (max-width: 515px) {
+    .header {
+        padding: 10px;
+    }
+}
+
+.header {
+    letter-spacing: 3px;  /* Между символами */
+    text-align: center;    
+}
+
+.nav {
+    padding: 0px;
+    background: rgba(0, 0, 0, 1);
+    position: sticky;
+    top: 10px;    
+}
+.nav ul {
+    display: flex;
+}
+.nav ul li {
+    list-style: none;
+    padding: 7px;
+    width: 100%;
+    text-align: center;
+}
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav ul li:hover {
+    background: rgba(255, 255, 255, .1);
+    font-weight: bold;
+}
+.nav ul li:active {
+    background: rgba(255, 255, 255, .2);
+    font-weight: bold;
+}
+
+.avatar {
+    width: 270px;
+    border-radius: 7px;
+    border: 1px solid white;
+    padding: 6px;
+}
+.aboutmy {
+    display: flex;
+}
+@media (max-width: 1017px) {
+    .aboutmy {
+        display: block;
+        text-align: center;
+    }    
+}
+.info-text {
+    margin-left: 30px;    
+    text-align: justify;
+}
+@media (max-width: 1017px) {    
+    .info-text {
+        margin-left: 0;
+        line-height: 1.45em;  /* размер строчки */        
+        letter-spacing: 1px;  /* Между символами */
+        word-spacing: 1px;
+    }
+}
+
+.info-text p {
+    text-indent: 40px;  /* отступа первой строки блока  */
+}
+
+.aboutmy a {
+    color: #fff;
+    text-decoration: none;
+    /* background: rgba(0, 0, 0, 0.3); */
+    padding:7px;
+    border: 1px solid white;
+    border-radius: 7px;
+    font-family: inherit;  /* Наследование заданного шрифта */
+   /* transition: all 0.5s;     Плавная анимация псевдоселектора, для инф */   
+}
+
+/*  П С Е В Д О С Е Л Е К Т О Р Ы  */
+
+.aboutmy a:hover {      /* Меняет вид при наведении курсора, применим к любых элементов */
+    font-weight: bold;
+    border: 3px solid white;
+}
+.aboutmy a:visited {       /* Меняет вид после прохождения по ссылке, применим только к ссылкам */
+    color: blueviolet;
+    border-color: blueviolet;
+    border: 3px solid blueviolet;
+}
+.aboutmy a:active {        /* Меняет вид при удержании ссылки или во время клика, применим ???? */
+    color: red;
+    border-color: red;
+    border: 3px solid red;
+}
+
+
+
+h2, h4 {
+    padding-bottom: 10px;
+}
+
+.hobby ul {
+    list-style: none;
+}
+.hobby ul li {
+    padding-top: 6px;
+    border-bottom: 1px solid grey;
+    width: 20%;
+    line-height: 1.2em;
+}
+@media (max-width: 870px) {
+    .hobby ul li {
+        width: 40%;
+    }
+}
+.hobby ul li:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+.work table {
+    border-bottom: 1px solid grey;
+    width: 80%;
+}
+@media (max-width: 1017px) {
+    .work table {
+        width: 100%;
+        
+    }
+}
+@media (max-width: 830px) {
+    .work table {        
+        font-size: 16px;
+        line-height: 1.4em;
+    }
+}
+.work th {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;    
+    text-align: left;    
+}
+.work td:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+
+.contacts {
+    display: flex;    
+}
+@media (max-width: 830px) {
+    .contacts {
+        display: block;        
+    }
+}
+
+.contact1, 
+.contact2 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.contact1 {
+    margin-right: 10px;
+}
+.contact2 {
+    margin-left: 10px;
+}
+@media (max-width: 830px) {
+    .contact2 {
+        margin-left: 0;
+    }    
+}
+.form-row {
+    display: flex;
+    margin: 12px 0 12px;
+}
+@media (max-width: 515px) {
+    .form-row {
+        display: block;
+        margin: 0 0 12px;
+    }
+    .form-row .form-group {
+        padding-top: 12px;
+    }
+}
+.form-row, .form-group {
+    margin-right: 20px;
+    line-height: 1.1em;
+    width: 100%;
+}
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: rgba(255, 255, 255, .1);
+    font-size: 16px;
+    color: #fff;
+    padding: 7px 0px 6px 3px;
+    outline: none;
+    font-family: inherit;
+}
+
+.btn {
+    background: rgba(0, 0, 0, 0.1);
+    padding:7px;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 7px;
+    font-family: inherit;  /* Наследование заданного шрифта */
+    font-style: italic;
+    letter-spacing: 1px;  /* Между символами */
+}
+.btn:hover {
+    /* background: rgba(255, 255, 255, .1); */
+    font-weight: bold;
+    border: 3px solid white;
+}
+.btn:active {        /* Меняет вид при удержании ссылки или во время клика, применим ???? */
+    color: red;
+    border-color: red;
+    border: 3px solid red;
+}
+
+
+.contact2 table {
+    width: 100%;
+}
+@media (max-width: 830px) {
+    .contact2 table {
+        margin-top: 12px;
+    }
+}
+.contact2 table td {
+    line-height: 1.2em;
+    padding-top: 8px;
+}
+.contact2 table tr:nth-child(odd) {
+    background: rgba(255, 255, 255, .1);
+}
